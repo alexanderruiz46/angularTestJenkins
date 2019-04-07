@@ -1,0 +1,6 @@
+node {
+	stage('Build'){
+		checkout scm
+        sh "npm install"
+        sh "zip zip -r archivo.zip ."
+    }
